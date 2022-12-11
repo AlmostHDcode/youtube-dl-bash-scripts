@@ -1,7 +1,7 @@
 # youtube-dl-bash-scripts
-custom bash scripts for youtube-dl
-updated to using a fork of youtube-dl called yt-dlp, it fixes the issue of slow downloads
-original line using standard youtube-dl still exists but is commented out
+* custom bash scripts for youtube-dl
+* updated to using a fork of youtube-dl called yt-dlp, it fixes the issue of slow downloads
+* original line using standard youtube-dl still exists but is commented out
 
 ## youtube-dl-audio.sh
   * ffmpeg may be required depending on what audio format you choose
