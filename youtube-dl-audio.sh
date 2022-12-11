@@ -58,16 +58,15 @@ while [ "$go" != "N" ]; do
 
 	#quit condition
 	if [ "$url" == "N" ]; then
-	  go="N"
-	  echo "Exiting Youtube-dl ....."
-    echo "Goodbye"
-    continue
-	else # run youtube-dl command, using ffmpeg to convert to different format if needed
-  
-    #old version using the standard youtube-dl
-	  #dl_string="youtube-dl -x --audio-format $audioFormat --audio-quality 0 -o $destLoc --write-thumbnail --ffmpeg $ff $url"
+		go="N"
+		echo "Exiting Youtube-dl ....."
+    	echo "Goodbye"
+    	continue
+	else
+    	#old version using the standard youtube-dl
+	 	#dl_string="youtube-dl -x --audio-format $audioFormat --audio-quality 0 -o $destLoc --write-thumbnail --ffmpeg $ff $url"
     
-    #new version using fork of youtube-dl, yt-dlp fixes issue with slow downloads
+    	#new version using fork of youtube-dl, yt-dlp fixes issue with slow downloads
 		dl_string="yt-dlp -x --audio-format $audioFormat --audio-quality 0 -o $destLoc --write-thumbnail --ffmpeg $ff $url"
 		echo "$dl_string"
 	 	eval "$dl_string"
