@@ -12,5 +12,5 @@
 
 ## youtube-dl-video.sh
   * user enters url and it will download the best premerged audio and video format that is available
-  * tried to make it so user could select specific resoltion or limit the resolution (for example download best up to 1080p) but I kept getting errors
+  * tried to make it so user could select specific resolution or limit the resolution (for example download best up to 1080p) but I kept getting errors
   * continues to loop allowing user to download multiple videos until they decide to quit out of the loop
